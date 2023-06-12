@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Navegacao from '../src/components/navegacao/navegacao.js';
-import styles from '../src/styles/home.module.css';
+import Navegacao from '@/components/navegacao/navegacao.js';
+import styles from '@/styles/home.module.css';
 
 export default function Home() {
   return (
