@@ -1,0 +1,34 @@
+.divBotoes {
+    background-color: var(--cor-botao);
+    padding: .7rem 1rem;
+    border-radius: 0.75rem;
+    border: 2px solid #000000;
+}
+
+.divBotao {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.botaoLinks {
+}
+
+.logosBotoes {
+    width: 2rem;
+    position: absolute;
+    left: 0;
+}
+
+.logoBotaoImagemMaior {
+    width: 2rem;
+    position: absolute;
+    left: 0;
+    transform: scale(.7);
+}
+
+.tituloBotoes {
+    font-weight: 500;
+}
