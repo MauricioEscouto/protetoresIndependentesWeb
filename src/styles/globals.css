@@ -5,6 +5,10 @@
   --cor-botao: #C5413D;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 html,
 body {
   padding: 0;
@@ -43,4 +47,8 @@ ul {
 button {
   padding: 0.5rem 1rem;
   font-weight: bold;
+}
+
+#__next {
+  height: 100%;
 }

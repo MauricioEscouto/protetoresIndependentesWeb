@@ -3,8 +3,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     color: var(--cor-fonte);
+    padding-top: 2rem;
 }
 
 .divLogo {
@@ -24,6 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: .5rem;
 }
 
 .titulo {
@@ -34,10 +36,24 @@
 
 .descricaoOng {
     text-align: center;
-    width: 80%;
+    width: 100%;
     text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .containerBotoes {
     width: 100%;
+}
+
+.divDireitosAutorais {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 956px)
+{
+  .divTitulo
+   {
+    width: 185%;
+   }
 }

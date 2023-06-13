@@ -3,6 +3,7 @@
     padding: .7rem 1rem;
     border-radius: 0.75rem;
     border: 2px solid #000000;
+    margin: 1.5rem 0rem;
 }
 
 .divBotao {
@@ -17,13 +18,13 @@
 }
 
 .logosBotoes {
-    width: 2rem;
+    width: 1.5rem;
     position: absolute;
     left: 0;
 }
 
 .logoBotaoImagemMaior {
-    width: 2rem;
+    width: 1.5rem;
     position: absolute;
     left: 0;
     transform: scale(.7);

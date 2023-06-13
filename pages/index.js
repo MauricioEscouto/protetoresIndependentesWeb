@@ -12,9 +12,6 @@ export default function Home() {
 
       <main className={style.main}>
         <Navegacao/>
-        <h1 className={style.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
       </main>
     </>
   )
