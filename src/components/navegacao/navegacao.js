@@ -63,17 +63,17 @@ return (
             />
         </div>
 
-        <div className={style.divDireitosAutorais}>
-            <p>Copyright © 2022 Protetores Independentes.</p>
-        </div>  
-
-        <div >
+        <div>
             <ComponenteEstiloEsquerdo/>
         </div>
 
-        <div >
+        <div>
             <ComponenteEstiloDireito/>
         </div>
+
+        <div className={style.divDireitosAutorais}>
+            <p>Copyright © 2022 Protetores Independentes.</p>
+        </div>  
     </section>
 );
 }
