@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Navegacao from '@/components/navegacao/navegacao.js';
+import Navegacao from './navegacao/index.js';
 import style from '@/styles/home.module.css';
 
 export default function Home() {
@@ -10,9 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={style.main}>
-        <Navegacao/>
-      </main>
+      <Navegacao/>
     </>
   )
 }
