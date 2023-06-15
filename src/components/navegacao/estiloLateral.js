@@ -10,7 +10,7 @@ function ComponenteEstiloEsquerdo() {
         const screenWidth = window.innerWidth;
         let newLeft = -150 - (1075 - screenWidth) / 10;
     
-        newLeft = screenWidth < 1075 ? newLeft : 0;
+        newLeft = screenWidth < 1100 ? newLeft : 0;
     
         setLeftOffset(newLeft);
     

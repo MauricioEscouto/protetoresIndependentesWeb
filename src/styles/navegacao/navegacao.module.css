@@ -1,12 +1,19 @@
 .containerNavegacao {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     width: 40%;
     max-width: 600px;
     color: var(--cor-fonte);
     padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.divInformacoesPrincipais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .divLogo {
@@ -15,7 +22,7 @@
     border-radius: 8.5rem;
     border: 3px solid #000000;
     padding: 2rem;
-    background-color: var(--cor-fundo-secundaria);
+    background-color: var(--cor-background-secundaria);
 }
 
 .logo {
@@ -46,8 +53,6 @@
 }
 
 .divDireitosAutorais {
-    position: absolute;
-    top: 96%;
     text-align: center;
 }
 
