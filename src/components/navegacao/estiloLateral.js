@@ -1,10 +1,26 @@
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState, useEffect } from 'react';
 
 function ComponenteEstiloEsquerdo() {
     const imagemRef = useRef(null);
     const [topOffset, setTopOffset] = useState(0);
     const [leftOffset, setLeftOffset] = useState(0);
     
+    useEffect(() => {
+        const limparCacheImagem = () => {
+          const imagens = document.getElementsByTagName('img');
+          for (let i = 0; i < imagens.length; i++) {
+            const src = imagens[i].src;
+            imagens[i].src = `${src}?${Date.now()}`;
+          }
+        };
+        
+        window.addEventListener('load', limparCacheImagem);
+      
+        return () => {
+          window.removeEventListener('load', limparCacheImagem);
+        };
+    }, []);
+
     useLayoutEffect(() => {
         const handleResize = () => {
         const screenWidth = window.innerWidth;
