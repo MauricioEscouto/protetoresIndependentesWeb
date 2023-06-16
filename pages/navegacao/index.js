@@ -87,13 +87,7 @@ function Navegacao() {
                     />
                 </div>
 
-                <div>
-                    <ComponenteEstiloEsquerdo/>
-                </div>
-
-                <div>
-                    <ComponenteEstiloDireito/>
-                </div>
+                <ComponentesCarregadosDepois/>
             </div>
 
             <div className={style.divDireitosAutorais}>
@@ -103,4 +97,22 @@ function Navegacao() {
     </main>);
   }
 
+function ComponentesCarregadosDepois() {
+useEffect(() => {
+    window.onload = () => {
+    // Executar qualquer ação que você desejar após a página ser carregada completamente
+    };
+}, []);
+
+return (
+    <>
+    <div>
+        <ComponenteEstiloEsquerdo/>
+    </div>
+    <div>
+        <ComponenteEstiloDireito/>
+    </div>
+    </>
+);
+}
 export default Navegacao;
