@@ -15,9 +15,9 @@ function ComponenteEstiloEsquerdo() {
         setLeftOffset(newLeft);
     
         const screenHeight = document.documentElement.scrollHeight;
-        const imageHeight = imagemRef.current.offsetHeight;
+        const imageHeight = 480 + 51;
         const newTop = screenHeight - imageHeight;
-    
+            
         setTopOffset(newTop);
         };
     
