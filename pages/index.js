@@ -1,6 +1,6 @@
 import Head from 'next/head';
+import Header from '@/components/shared/header.js'
 import Navegacao from './navegacao/index.js';
-import style from '@/styles/home.module.css';
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header/>
       <Navegacao/>
     </>
   )

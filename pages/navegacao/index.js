@@ -8,24 +8,24 @@ import style from '@/styles/navegacao/navegacao.module.css'
 function Navegacao() {
     const [alturaTela, setAlturaTela] = useState(0);
 
-    useEffect(() => {
-      const handleResize = () => {
-        setAlturaTela(document.documentElement.scrollHeight);
-      };
-  
-      if (typeof window !== 'undefined') {
-        setAlturaTela(document.documentElement.scrollHeight);
-        window.addEventListener('resize', handleResize);
-  
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-      }
-    }, []);
-  
-    const sectionStyle = {
-      height: `${alturaTela}px`,
+  useEffect(() => {
+    const handleResize = () => {
+      setAlturaTela(window.innerHeight - 70);
     };
+
+    if (typeof window !== 'undefined') {
+      setAlturaTela(document.documentElement.scrollHeight - 70);
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
+
+  const sectionStyle = {
+    height: `${alturaTela}px`,
+  };
   
     return (
     <main>

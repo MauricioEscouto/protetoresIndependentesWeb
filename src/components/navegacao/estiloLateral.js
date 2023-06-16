@@ -8,7 +8,7 @@ function ComponenteEstiloEsquerdo() {
     useLayoutEffect(() => {
         const handleResize = () => {
         const screenWidth = window.innerWidth;
-        let newLeft = -150 - (1075 - screenWidth) / 10;
+        let newLeft = -150 - (1100 - screenWidth) / 10;
     
         newLeft = screenWidth < 1100 ? newLeft : 0;
     

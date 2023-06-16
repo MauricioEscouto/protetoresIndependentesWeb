@@ -1,0 +1,28 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--cor-background-terciaria);
+    box-shadow: rgb(0 0 0 / 20%) -0.5px 2px 2px 0px;
+}
+
+.left-navbar {
+    width: 20rem;
+    justify-content: space-between;
+}
+
+.main-title {
+    color: var(--cor-fonte);
+}
+
+.md\:text-blue-700 {
+    color: var(--cor-fonte);
+}
+
+.option-navbar {
+    color: var(--cor-fonte);
+}
+
+.option-navbar:hover {
+    color: var(--cor-fonte);
+}
