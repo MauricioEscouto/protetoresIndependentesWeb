@@ -13,6 +13,7 @@
 
 .main-title {
     color: var(--cor-fonte);
+    line-height: 1;
 }
 
 .md\:text-blue-700 {
@@ -25,4 +26,12 @@
 
 .option-navbar:hover {
     color: var(--cor-fonte);
+    background-color: transparent;
+}
+
+@media (max-width: 768px)
+{
+    .bg-blue-700 {
+        background-color: var(--cor-background);
+    }
 }

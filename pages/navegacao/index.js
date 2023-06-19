@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { handleDivTesteClick } from '@/components/shared/header.js';
 import Image from 'next/image';
 import BotaoSocial from '@/components/navegacao/botaoSocial';
 import { ComponenteEstiloEsquerdo, ComponenteEstiloDireito } from '@/components/navegacao/estiloLateral';
