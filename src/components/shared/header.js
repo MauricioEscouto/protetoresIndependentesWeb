@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
-import { isMobile } from 'react-device-detect';
+import isMobile from '@/components/shared/mobileDetect.js';
 
 import cabecalhoStyles from '@/styles/shared/header.module.css';
 import cabecalhoMobileStyles from '@/styles/shared/header_mobile.module.css';
 
 function Header() {
-    let styles = isMobile ? cabecalhoMobileStyles : cabecalhoStyles;
+    let styles = isMobile() ? cabecalhoMobileStyles : cabecalhoStyles;
 
     useEffect(() => {
         const handleClick = (event) => {

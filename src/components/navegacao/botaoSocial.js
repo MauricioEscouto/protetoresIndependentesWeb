@@ -1,12 +1,14 @@
 import React from 'react';
-import { isMobile } from 'react-device-detect';
+import isMobile from '@/components/shared/mobileDetect.js';
 import Image from 'next/image';
 import styleDesktop from '@/styles/navegacao/botaoSocial.module.css';
 import styleMobile from '@/styles/navegacao/botaoSocial_mobile.module.css';
 
-let style = isMobile ? styleMobile : styleDesktop;
+let style;
 
 const BotaoSocial = ({ href, src, alt, title }) => {
+  style = isMobile() ? styleMobile : styleDesktop;
+  
   if (href === "/") {
     return (
       <div className={style.divBotoes}>
