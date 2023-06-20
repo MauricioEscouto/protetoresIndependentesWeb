@@ -44,7 +44,6 @@ function Navegacao() {
                 </div>
 
                 <div className={style.divTitulo}>
-                    <h1 className={style.titulo}>Protetores Independentes</h1>
                     <p className={style.descricaoOng}>Nosso grupo está comprometido em ajudar animais de rua, e nossos voluntários trabalham 
                         incansavelmente para resgatá-los, tratá-los e cuidar deles com amor e dedicação. 
                         Junte-se a nós e faça a diferença na vida desses animais vulneráveis.
@@ -60,31 +59,17 @@ function Navegacao() {
                     />
 
                     <BotaoSocial
-                        href="https://www.instagram.com/somosprotetoresindependentes/"
+                        href="https://www.facebook.com/somosprotetoresindependentes/"
                         src="/img/navegacao/facebook.svg"
                         alt="Logo do Facebook"
                         title="Facebook"
                     />
 
                     <BotaoSocial
-                        href="https://www.instagram.com/somosprotetoresindependentes/"
-                        src="/img/navegacao/whatsapp.svg"
-                        alt="Logo do Whatsapp"
-                        title="Grupo WhatsApp"
-                    />
-
-                    <BotaoSocial
-                        href="https://www.instagram.com/somosprotetoresindependentes/"
+                        href="/"
                         src="/img/navegacao/pix.svg"
                         alt="Logo do Pix"
-                        title="Chave Pix: teste"
-                    />
-
-                    <BotaoSocial
-                        href="https://www.instagram.com/somosprotetoresindependentes/"
-                        src="/img/navegacao/dinheiro.svg"
-                        alt="Logo do Vaquinha"
-                        title="Vaquinha"
+                        title="Chave Pix: (51) 98411-2831"
                     />
                 </div>
 
