@@ -39,9 +39,19 @@ const BotaoSocial = ({ href, src, alt, title }) => {
 };
 
 var DivBotao = ({src, alt, title}) => {
-  const isLogoMaior = title === 'Facebook' ? style.logoBotaoImagemMaior : style.logosBotoes;
+  let isLogoMaior;
+  if (title === 'Facebook') {
+    isLogoMaior = style.logoBotaoImagemMaior;
+  }
+  else if (title.includes('adulto')) {
+    isLogoMaior = style.logoBotaoImagemMenor
+  }
+  else {
+    isLogoMaior = style.logosBotoes;
+  }
+
   const isBotaoPix = title.includes('Pix') ? style.divBotaoPix : style.divBotao;
-  
+
   return (
     <div className={`${isBotaoPix}`}>
       <Image

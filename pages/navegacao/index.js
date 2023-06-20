@@ -57,6 +57,13 @@ function Navegacao() {
                     />
 
                     <BotaoSocial
+                        href="https://www.instagram.com/adote.um.adulto/?igshid=MzRlODBiNWFlZA%3D%3D"
+                        src="/img/navegacao/dog.svg"
+                        alt="ícone de cachorro"
+                        title="Adote um adulto"
+                    />
+
+                    <BotaoSocial
                         href="https://www.facebook.com/somosprotetoresindependentes/"
                         src="/img/navegacao/facebook.svg"
                         alt="Logo do Facebook"

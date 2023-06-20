@@ -10,13 +10,13 @@ function Navegacao() {
     useEffect(() => {
         const handleResize = () => {
             console.log(window.innerHeight);
-            if(window.innerHeight > 700) {
+            if(window.innerHeight > 780) {
                 setAlturaTela(window.innerHeight - 70);
             }
         };
 
         if (typeof window !== 'undefined') {
-            if(window.innerHeight > 700) {
+            if(window.innerHeight > 780) {
                 setAlturaTela(document.documentElement.scrollHeight - 70);
             }
 
@@ -60,6 +60,13 @@ function Navegacao() {
                         src="/img/navegacao/instagram.svg"
                         alt="Logo do Instagram"
                         title="Instagram"
+                    />
+
+                    <BotaoSocial
+                        href="https://www.instagram.com/adote.um.adulto/?igshid=MzRlODBiNWFlZA%3D%3D"
+                        src="/img/navegacao/dog.svg"
+                        alt="ícone de cachorro"
+                        title="Adote um adulto"
                     />
 
                     <BotaoSocial
