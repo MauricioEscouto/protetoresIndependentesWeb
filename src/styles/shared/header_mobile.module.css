@@ -7,13 +7,13 @@
 }
 
 .left-navbar {
-    width: 20rem;
     justify-content: space-between;
 }
 
 .main-title {
     color: var(--cor-fonte);
     line-height: 1;
+    font-size: 1.2rem;
 }
 
 .md\:text-blue-700 {
@@ -38,6 +38,6 @@
 
 @media (min-width: 768px) {
     .md\:hidden {
-        display: none;
+        display: block;
     }
 }

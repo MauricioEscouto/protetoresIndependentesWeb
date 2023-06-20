@@ -1,0 +1,46 @@
+.divBotoes {
+    background-color: var(--cor-botao);
+    padding: .7rem 1rem;
+    border-radius: 0.75rem;
+    border: 2px solid #000000;
+    margin: 1.5rem 0rem;
+    
+}
+
+.divBotoes:hover {
+    background: var(--cor-botao-hover);
+}
+
+.divBotao {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.divBotaoPix {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.logosBotoes {
+    width: 1.5rem;
+    position: absolute;
+    left: 0;
+}
+
+.logoBotaoImagemMaior {
+    width: 1.5rem;
+    position: absolute;
+    left: 0;
+    transform: scale(.7);
+}
+
+.tituloBotoes {
+    font-weight: 500;
+}
