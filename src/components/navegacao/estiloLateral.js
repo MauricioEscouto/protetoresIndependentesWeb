@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState, useEffect } from 'react';
 
 function ComponenteEstiloEsquerdo() {
     const imagemRef = useRef(null);
@@ -15,9 +15,16 @@ function ComponenteEstiloEsquerdo() {
         setLeftOffset(newLeft);
     
         const screenHeight = document.documentElement.scrollHeight;
-        const imageHeight = imagemRef.current.offsetHeight;
-        const newTop = screenHeight - imageHeight;
-    
+        const imageHeight = 480 + 51;
+        var newTop = 0;
+
+        if (screenHeight > 864) {
+            newTop = screenHeight - imageHeight;
+        }
+        else {
+            newTop = 333;
+        }
+            
         setTopOffset(newTop);
         };
     
