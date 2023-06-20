@@ -5,7 +5,6 @@ import Navegacao from './navegacao/index.js';
 import NavegacaoMobile from './navegacao/index_mobile.js';
 
 export default function Home() {
-  var isMobile = true;
   const ComponenteNavegacao = isMobile ? NavegacaoMobile : Navegacao;
 
   return (

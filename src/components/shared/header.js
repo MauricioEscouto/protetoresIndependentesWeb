@@ -5,9 +5,8 @@ import cabecalhoStyles from '@/styles/shared/header.module.css';
 import cabecalhoMobileStyles from '@/styles/shared/header_mobile.module.css';
 
 function Header() {
-    const isMobile = true;
     let styles = isMobile ? cabecalhoMobileStyles : cabecalhoStyles;
-    
+
     useEffect(() => {
         const handleClick = (event) => {
             const navegacaoRef = document.getElementById('navbar-default');

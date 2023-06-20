@@ -1,9 +1,9 @@
 import React from 'react';
+import { isMobile } from 'react-device-detect';
 import Image from 'next/image';
 import styleDesktop from '@/styles/navegacao/botaoSocial.module.css';
 import styleMobile from '@/styles/navegacao/botaoSocial_mobile.module.css';
 
-const isMobile = true;
 let style = isMobile ? styleMobile : styleDesktop;
 
 const BotaoSocial = ({ href, src, alt, title }) => {

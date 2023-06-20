@@ -29,15 +29,21 @@
     background-color: transparent;
 }
 
-@media (max-width: 768px)
+@media (max-width: 767px)
 {
     .bg-blue-700 {
         background-color: var(--cor-background);
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
     .md\:hidden {
         display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:hidden {
+        display: none;
     }
 }
