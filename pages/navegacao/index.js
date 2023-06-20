@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { handleDivTesteClick } from '@/components/shared/header.js';
 import Image from 'next/image';
 import BotaoSocial from '@/components/navegacao/botaoSocial';
 import { ComponenteEstiloEsquerdo, ComponenteEstiloDireito } from '@/components/navegacao/estiloLateral';
@@ -72,7 +71,6 @@ function Navegacao() {
                         title="Chave Pix: (51) 98411-2831"
                     />
                 </div>
-
                 <ComponentesCarregadosDepois/>
             </div>
 
@@ -84,21 +82,20 @@ function Navegacao() {
   }
 
 function ComponentesCarregadosDepois() {
-useEffect(() => {
-    window.onload = () => {
-    // Executar qualquer ação que você desejar após a página ser carregada completamente
-    };
-}, []);
+    useEffect(() => {
+        window.onload = () => {
+        };
+    }, []);
 
-return (
-    <>
-    <div>
-        <ComponenteEstiloEsquerdo/>
-    </div>
-    <div>
-        <ComponenteEstiloDireito/>
-    </div>
-    </>
-);
+    return (
+        <>
+            <div>
+                <ComponenteEstiloEsquerdo/>
+            </div>
+            <div>
+                <ComponenteEstiloDireito/>
+            </div>
+        </>
+    );
 }
 export default Navegacao;

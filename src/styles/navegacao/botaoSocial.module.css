@@ -19,6 +19,15 @@
     position: relative;
 }
 
+.divBotaoPix {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
 .logosBotoes {
     width: 1.5rem;
     position: absolute;
@@ -34,4 +43,13 @@
 
 .tituloBotoes {
     font-weight: 500;
+}
+
+@media (max-width: 700px)
+{
+  .divBotaoPix img
+   {
+    position: initial;
+    margin-right: 1rem;
+   }
 }
