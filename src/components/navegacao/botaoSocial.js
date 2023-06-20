@@ -6,13 +6,13 @@ const BotaoSocial = ({ href, src, alt, title }) => {
   if (href === "/") {
     return (
       <div className={style.divBotoes}>
-        <p className={style.botaoLinks}>
+        <span className={style.botaoLinks}>
           <DivBotao 
             src= {src}
             alt= {alt}
             title= {title}
           />
-        </p>
+        </span>
       </div>
     );
   }
