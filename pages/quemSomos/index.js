@@ -1,9 +1,39 @@
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Slider from '@/components/quemSomos/slider.js';
 import Footer from '@/components/shared/footer';
 import style from '@/styles/quemSomos/quemSomos.module.css'
 
 function QuemSomos() {
+    let valor = 0;
+    let screenAtual = 0;
+    const [marginTop, setMarginTop] = useState(0);
+
+    useEffect(() => {
+        const handleResize = () => {
+            const screenWidth = window.innerWidth;
+            console.log(screenWidth)
+                valor = (2135 - screenWidth) * 0.24;
+                const newMarginTop = screenWidth > 800 && screenWidth < 2090 ? -valor : 0;
+                setMarginTop(newMarginTop);
+            screenAtual = screenWidth;
+        };
+
+        
+        handleResize(); 
+        
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const sectionHistoria = {
+        marginTop: `${marginTop}px`,
+    };
+
     return (
         <div>
             <header className={style.header}>
@@ -20,13 +50,13 @@ function QuemSomos() {
                 <div className={style.banner}>
                     <div className={style.bannerContent}>
                         <h2>somos</h2>
-                        <h1>Protetores
-                        </h1>
+                        <h1>Protetores</h1>
+                        <h1>Independentes</h1>
                         <p>📌Guaíba - RS</p>
                     </div>
                 </div>
 
-                <section className={style.historySection} id="history-section">
+                <section className={style.historySection} id="history-section" style={sectionHistoria}>
                     <div className={style.historyContent}>
                         <div className={style.historyText}>
                             <h1>Nossa história</h1>
