@@ -1,0 +1,34 @@
+.footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+} 
+
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.placeName {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.placeName p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.socialIcons a {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.socialIcons a:hover {
+    color: #ffcc00;
+}
