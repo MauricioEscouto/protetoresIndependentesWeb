@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Slider from '@/components/quemSomos/slider.js';
@@ -35,7 +36,11 @@ function QuemSomos() {
     };
 
     return (
-        <div>
+        <>
+            <Head>
+                <title>Quem Somos - Protetores Independentes</title>
+            </Head>
+
             <header className={style.header}>
                 <nav className={style.navHeader}>
                     <ul>
@@ -125,7 +130,7 @@ function QuemSomos() {
             </main>
 
             <Footer/>
-        </div>
+        </>
     );
 }
 
